@@ -1,0 +1,45 @@
+// Color Variables
+$main-color-background: #fcfcfc;
+$main-color-detail: #263339;
+$main-color-accent:#52769a;
+$main-color-accent-bright: #5c84ac;
+
+// Standard font vars
+// Titles
+$title-lg: 3rem;
+$title-md: 2.5rem;
+$title-sm: 2rem;
+$title-xs: 1.25rem;
+
+// Text
+$text-xl: 1.75rem;
+$text-lg: 1.5rem;
+$text-md: 1.25rem;
+$text-sm: 1rem;
+$text-xs: 0.85rem;
+
+// Responsive font variables
+// Titles, depending on screen width
+$res-title-size-lg: 2vw;
+$res-title-size-md: 4vw;
+$res-title-size-sm: 5vw;
+
+// Text, depending on screen width
+$res-text-size-lg: 1.5vw;
+$res-text-size-md: 2vw;
+$res-text-size-sm: 4vw;
+
+// Text, depending on screen height
+$res-text-size-lg-h: 2.5vh;
+$res-text-size-md-h: 4.25vh;
+$res-text-size-sm-h: 6.5vh;
+
+// Margin and padding variables
+$gap-xl: 2rem;
+$gap-lg: 1.5rem;
+$gap-md: 1rem;
+$gap-sm: 0.5rem;
+$gap-xs: 0.25rem;
+
+// Modular vars
+$nav-height: 7.5vh;

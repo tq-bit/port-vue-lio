@@ -1,0 +1,68 @@
+@import '../variables.scss';
+
+.gallery-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	.gallery-image {
+		background-color: $main-color-background;
+		border-radius: $gap-xs;
+		-webkit-box-shadow: 0px 0px 2px 1px
+			lighten($color: $main-color-detail, $amount: 15);
+		box-shadow: 0px 0px 2px 1px lighten($color: $main-color-detail, $amount: 15);
+	}
+	.gallery-text {
+		background-color: $main-color-accent;
+		position: absolute;
+		bottom: $gap-md;
+		left: $gap-md;
+		padding: $gap-sm $gap-md;
+		max-width: 40%;
+		text-align: justify;
+		border-radius: $gap-xs;
+		margin: $gap-xs 0;
+	}
+	.gallery-button-container {
+		position: absolute;
+		right: $gap-md;
+		bottom: $gap-sm;
+	}
+}
+
+/* Medium sized Desktops & larger tablets */
+@media (max-width: 950px) {
+	.gallery-container {
+		position: static;
+		height: 100%;
+		width: 100%;
+		.gallery-image {
+			background-color: $main-color-background;
+			border-radius: $gap-xs;
+			-webkit-box-shadow: 0px 0px 2px 1px
+				lighten($color: $main-color-detail, $amount: 15);
+			box-shadow: 0px 0px 2px 1px
+				lighten($color: $main-color-detail, $amount: 15);
+		}
+		.gallery-text {
+			position: static;
+			background-color: $main-color-accent;
+			bottom: $gap-md;
+			left: $gap-md;
+			padding: $gap-sm $gap-md;
+			max-width: 100%;
+			text-align: justify;
+			border-radius: $gap-xs;
+			margin: $gap-xs 0;
+		}
+		.gallery-button-container {
+			position: static;
+			right: $gap-md;
+			bottom: $gap-sm;
+		}
+	}
+}
+
+/* Mobile phones and standard tablets */
+@media (max-width: 576px) {
+
+}

@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.pillbar-items {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .pillbar-item {
+    border-radius: 100px;
+    transition: all 0.15s;
+    padding: $gap-sm $gap-md;
+    margin: 0 $gap-xs;
+    color: $main-color-background;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .pillbar-item:hover {
+    transition: all 0.15s;
+    text-decoration: none;
+    background-color: $main-color-accent;
+  }
+
+  .active {
+    background-color: $main-color-accent;
+  }
+}
+
+.pillbar-container {
+  overflow-y: auto;
+  margin-top: $gap-sm;
+  padding: $gap-sm $gap-md;
+}

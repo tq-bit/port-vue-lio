@@ -1,0 +1,42 @@
+@import '../variables.scss';
+
+.foo {
+	position: absolute;
+	bottom: $gap-md;
+	right: 0;
+	left: 0;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foobutton {
+  border: 2px solid $main-color-background;
+  border-radius: 50%;
+	background-color: $main-color-detail;
+	color: $main-color-background;
+	cursor: pointer;
+	font-size: $text-md;
+  padding: $gap-md;
+}
+
+.foobutton:hover {
+	background-color: $main-color-background;
+	color: $main-color-detail;
+}
+
+.foobar {
+	background-color: $main-color-detail;
+	display: flex;
+	padding: $gap-md;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+	.foobar-item {
+		cursor: pointer;
+		color: $main-color-background;
+		margin: $gap-md;
+		font-size: $text-xl;
+	}
+}

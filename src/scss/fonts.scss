@@ -1,0 +1,54 @@
+@import "./variables.scss";
+
+// Standard sizes for fonts
+.header {
+  font-size: $title-lg;
+  margin: 0 0 $gap-md 0;
+}
+
+.subheader {
+  font-size: $title-sm;
+  margin: 0;
+}
+
+// Stlyes and media queries for responsive fonts
+.header-title-responsive {
+  font-size: $res-title-size-lg;
+  margin: 0 0 $gap-md 0;
+}
+
+.header-text-responsive {
+  font-size: $res-text-size-lg;
+  text-align: justify;
+  margin-bottom: $gap-lg;
+}
+
+@media (max-width: 992px) {
+  .header {
+    font-size: $title-md;
+  }
+  
+  .subheader {
+    font-size: $title-xs;
+  }
+
+  .header-title-responsive {
+    font-size: $res-title-size-md;
+  }
+  
+  .header-text-responsive {
+    font-size: $res-text-size-md;
+  }
+}
+
+// Media query for small devices
+@media (max-width: 576px) {
+
+  .header-title-responsive {
+    font-size: $res-title-size-sm;
+  }
+
+  .header-text-responsive {
+    font-size: $res-text-size-sm;
+  }
+}
